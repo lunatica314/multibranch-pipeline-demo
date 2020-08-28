@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Timeout') {
             steps {
-                timeout(time: 30, unit: "MINUTES")
+                sleep(time: 30, unit: "MINUTES")
             }
         }
         stage('Cleanup Workspace') {
